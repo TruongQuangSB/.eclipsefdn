@@ -7,8 +7,6 @@ local custom_branch_protection_rule(pattern) =
 
 local release_branch_protection_rule() = 
   orgs.newBranchProtectionRule('release/*') {
-    blocks_creations: true,
-    push_restrictions: ['eclipse-set-bot'],
     required_approving_review_count: 0,
   };
 
