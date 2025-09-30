@@ -10,6 +10,8 @@ local release_branch_protection_rule() =
     restricts_pushes: true,
     blocks_creations: true,
     push_restrictions: ['@eclipse-set-bot'],
+    allows_force_pushes: true,
+    bypass_force_push_allowances: ['@eclipse-set-bot'],
     required_approving_review_count: 0,
   };
 
